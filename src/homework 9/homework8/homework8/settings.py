@@ -80,10 +80,10 @@ environ.Env.read_env()
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        # "NAME": env("DATABASE_NAME"),
-        # "USER": env("USERNAME"),
-        "NAME": 'shop',
-        "USER": "shopuser",
+        "NAME": env("DATABASE_NAME"),
+        "USER": env("DB_USERNAME"),
+        # "NAME": 'shop',
+        # "USER": "shopuser",
         "PASSWORD": env("PASSWORD"),
         "HOST": env("HOST"),
         "PORT": env("PORT"),
